@@ -1,0 +1,191 @@
+/* CSS Document */
+/* Slash-Star begins a comment, and then Star-Slash ends a comment */
+
+/* 
+Body is a called a selector - these declarations will be applied to everything in this selector.
+
+The color can be specified by: Color name, RGB value, Hex value.
+
+The font family of a text is set with the font-family property (should hold several font names as a "fallback" system). 
+If the browser does not support the first font, it tries the next font. 
+
+Font size can be absolute or relative.
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+The em size unit is recommended by the W3C.
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+The size can be calculated from pixels to em using this formula: pixels/16=em.
+http://www.w3schools.com/css/css_font.asp
+*/
+
+body {
+	font-family: "Georgia", Georgia, Arial, Sans-serif; 
+	/* Set all font in the page to Helvetica with font formatting */
+	font-size: 100%; /* Generally set the font-size to 100% in the body 
+	                    - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space 
+	                       between lines of text. */
+	color: #000000; /* Hex Color Black */
+}
+
+a {	
+	color: #580c3b;
+	text-decoration: none;
+}
+
+a:hover {	
+	color: #184a30;
+	text-decoration: underline;
+}
+
+
+
+
+#top_row h1 {
+	color: #184a30; 
+	font-size: 3.75em; 
+	letter-spacing: -2px; 
+	text-align:center;
+}
+
+#top_row h3 {
+	font-size: 1.125em;
+	font-weight: 400; /* The font-weight property sets how thick or thin characters 
+	                     in text should be displayed. */
+}
+
+#bio {
+	margin-left: 3em;
+	font-size: .875em;
+}
+
+#bio a {
+	text-decoration: none;
+	border-bottom: 1px dotted #000;
+	color: #000;
+}
+
+#bio a:hover {	
+	color: #184a30;
+}
+/* Table Styling */
+table {
+	width: 50%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #58290c;
+	border-spacing: 3px;
+	margin: auto;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+
+th {
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+th, td {
+	padding: 2px;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	color: #58290c;
+}
+
+
+#container {
+	width: 95%;
+	margin: 10px auto;
+	border: 1px #58290c solid;
+	background-color: #f7e1cd;
+
+}
+/* The top row - spans all columns for header and nav */
+#top_row {
+	border-bottom: 1px dotted #ccc;
+	padding: .5em .5em 3em .5em;
+
+	/* http://www.digizol.com/2006/12/margin-vs-padding-css-properties.html */
+	/* top, right, bottom, left */
+}
+#top_row header {
+	margin-bottom: -2.5em;
+}
+#top_row nav {
+	float: right;
+}
+#top_row nav a {
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight: 400;
+	padding: 15px;
+	color: #000000
+}
+#top_row nav a:hover{
+	background: #f6f6f6;
+	color: #184a30;
+}
+
+#content {
+	float: left;
+	width: 65%;
+	margin: 0;
+	padding: 1em;
+	border-right: 1px dotted #ccc;
+}
+
+#content h3 {
+	font-family: Georgia, serif;
+	font-size: 1.5em;
+	margin: 30px 0 10px 0;
+	font-weight:normal;
+}
+#content img {
+	float: left;
+	margin: 1em;
+}
+#sidebar {
+	padding: 1em;
+	font-size: .875em;
+}
+#sidebar h3{
+	font-size: 1.125em;
+}
+
+footer{
+	clear: both;
+	margin: 0;
+	padding: .5em;
+	color: #333333;
+	font-variant: small-caps;
+	font-size: .831em;
+	text-align: center;
+}
+
+/* From Styling */
+form {
+	width: 75%;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666666;
+	padding: 10px;
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 5px;
+}
+
+label{
+	font-weight: bold;
+	text-align: center;
+}
+
+html { overflow-y: scroll; }
+
+#courselist {
+	clear:both;
+}
